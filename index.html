@@ -17,35 +17,57 @@
             background-color: #2E3B4E;
             color: white;
             padding: 20px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
         }
         header img {
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
+            margin-right: 20px;
+        }
+        header div {
+            display: flex;
+            flex-direction: column;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+        header p {
+            margin: 0;
+            font-size: 16px;
         }
         section {
             padding: 20px;
         }
         .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             margin-top: 20px;
         }
-        .contact, .education, .research, .awards {
-            width: 80%;
-            margin: 20px 0;
+        .content div {
+            margin-bottom: 40px;
         }
-        .contact ul, .education ul, .research ul, .awards ul {
+        .content h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .content ul {
             list-style: none;
             padding-left: 0;
         }
-        .contact ul li, .education ul li, .research ul li, .awards ul li {
+        .content ul li {
             margin: 8px 0;
         }
-        .research img, .research .papers {
+        .research img {
             width: 80%;
+            margin-top: 20px;
+        }
+        .research .papers {
             margin-top: 20px;
         }
         footer {
@@ -62,13 +84,16 @@
 <body>
     <header>
         <img src="证件照.png" alt="My Photo">
-        <h1>Third-Year Undergraduate Student</h1>
-        <p>Contact Information</p>
-        <p>Tel: +86 17749684279 | Gmail: jerry200351@gmail.com | QQemail: 2954104909@qq.com</p>
+        <div>
+            <h1>Enzu Peng (彭恩祖)</h1>
+            <h2>Third-Year Undergraduate Student</h2>
+            <p>Contact Information</p>
+            <p>Tel: +86 17749684279 | Gmail: jerry200351@gmail.com | QQemail: 8204222401@csu.edu.cn</p>
+        </div>
     </header>
 
     <section class="content">
-        <div class="contact">
+        <div class="personal-info">
             <h2>Personal Information</h2>
             <ul>
                 <li><strong>University:</strong> Central South University</li>
@@ -78,6 +103,7 @@
                 <li><strong>Expected Graduation:</strong> June 2026</li>
                 <li><strong>Average Score:</strong> 89.58/100</li>
                 <li><strong>Rank:</strong> 4th out of 24 students</li>
+                <li><strong>Enrolled Since:</strong> September 2022 (Bachelor Degree)</li>
             </ul>
         </div>
 
@@ -92,12 +118,10 @@
             <h2>Research Focus</h2>
             <p>My research interests lie in autonomous driving systems, integrating computer vision, machine learning, and deep learning. I am actively studying advanced machine learning techniques and eager to apply them to complex systems.</p>
             <p>I have experience in optimizing imaging techniques and developing agricultural automation solutions. As a Research Assistant at the Deep-Sea Resource Exploration and Development Laboratory, I worked on restoring turbid underwater images of cobalt crusts using homomorphic filtering and polarization imaging.</p>
-            <div class="papers">
-                <h3>Research Project Achievements:</h3>
-                <img src="论文效果图1.png" alt="Research Project Image 1">
-                <img src="论文效果图2.png" alt="Research Project Image 2">
-                <p>Paper Abstract: Marine cobalt-rich crusts, extensively used in industries such as aerospace, automotive, and electronics, are crucial mineral resources located on the ocean floor...</p>
-            </div>
+            <h3>Research Project Achievements:</h3>
+            <p><strong>Abstract:</strong> Marine cobalt-rich crusts, extensively used in industries such as aerospace, automotive, and electronics, are crucial mineral resources located on the ocean floor. To effectively exploit these valuable resources, underwater imaging is essential for real-time detection and distribution mapping in mining areas. However, the presence of suspended particles in the seabed mining environment severely degrades image quality due to light scattering and absorption...</p>
+            <img src="论文效果图1.png" alt="Research Project Image 1">
+            <img src="小论文效果图2.png" alt="Research Project Image 2">
         </div>
 
         <div class="awards">
@@ -116,7 +140,7 @@
     </section>
 
     <footer>
-        <p>© 2025 Third-Year Undergraduate Student</p>
+        <p>© 2025 Enzu Peng</p>
     </footer>
 </body>
 </html>
